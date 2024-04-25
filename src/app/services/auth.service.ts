@@ -6,6 +6,8 @@ import { map } from 'rxjs/operators';
 import { environment } from '../../environments/environment.development';
 import { LoginResponse } from '../interfaces/login-response';
 import { Router } from '@angular/router';
+import { RegisterRequest } from '../interfaces/register-request';
+import { RegisterResponse } from '../interfaces/register-response'; 
 
 @Injectable({
   providedIn: 'root'
@@ -29,4 +31,9 @@ export class AuthService {
       })
     );
   }
+
+  register(data1:RegisterRequest): Observable<RegisterResponse>{
+    return this.http.post<RegisterResponse>(this.apiUrl+'Users/Register', data1);
+  }
+
 }
