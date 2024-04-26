@@ -37,6 +37,10 @@ export class LoginComponent implements OnInit {
     console.log(Date.now());
 
     if (this.tokenDecoded.exp * 1000 < Date.now()) {
+      this.matSnackBar.open('Login again', 'Close', {
+        duration: 5000,
+        horizontalPosition: 'center'
+      });
       this.router.navigate(['/login']); // changed because couldnt access to login page anymore after expiration
     }
   }
