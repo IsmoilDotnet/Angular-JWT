@@ -1,1 +1,89 @@
-<p>home works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="background-div">
+        <div class="main">
+            <div class="description">
+                <h1>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates cupiditate eum eveniet ullam nisi illum?
+                </h1>
+                <p>
+                    lezzzgooooooooooò
+                </p>
+                <h1>
+                    42 kunda <span id="changing-text">Task1 <br>Task2</span> yozishni o'rganing
+                </h1>
+            </div>
+            <div class="offers">
+                <h1>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates cupiditate eum eveniet ullam nisi illum?
+                </h1>
+                <p>
+                    lezzzgooooooooooò
+                </p>
+            </div>
+            <div class="enrollment-encouragement">
+                <h1>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates cupiditate eum eveniet ullam nisi illum?
+                </h1>
+                <p>
+                    lezzzgooooooooooò
+                </p>
+            </div>
+            <div class="results">
+                <h1>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates cupiditate eum eveniet ullam nisi illum?
+                </h1>
+                <p>
+                    lezzzgooooooooooò
+                </p>
+            </div>
+            <div class="mentors">
+                <h1>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates cupiditate eum eveniet ullam nisi illum?
+                </h1>
+                <p>
+                    lezzzgooooooooooò
+                </p>
+            </div>
+            <div class="students">
+                <h1>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates cupiditate eum eveniet ullam nisi illum?
+                </h1>
+                <p>
+                    lezzzgooooooooooò
+                </p>
+            </div>
+            <div class="short-enrollment-encouragement">
+                <h1>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates cupiditate eum eveniet ullam nisi illum?
+                </h1>
+                <p>
+                    lezzzgooooooooooò
+                </p>
+            </div>
+        </div>
+    </div>
+    <header>
+        
+    </header>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const words = ['task1', 'task2'];
+            let currentWordIndex = 0;
+
+            setInterval(function() {
+                const changingText = document.getElementById('changing-text');
+                changingText.textContent = words[currentWordIndex];
+                currentWordIndex = (currentWordIndex + 1) % words.length;
+            }, 3000);
+        });
+    </script>
+</body>
+</html>

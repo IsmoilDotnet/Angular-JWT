@@ -37,7 +37,7 @@ export class LoginComponent implements OnInit {
     console.log(Date.now());
 
     if (this.tokenDecoded.exp * 1000 < Date.now()) {
-      this.router.navigate(['/register']);
+      this.router.navigate(['/login']); // changed because couldnt access to login page anymore after expiration
     }
   }
 
