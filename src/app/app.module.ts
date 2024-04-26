@@ -24,6 +24,9 @@ import { StudentsComponent } from './admin/students/students.component';
 import { StudentDetailsComponent } from './admin/students/student-details/student-details.component';
 import { StudentProfileComponent } from './admin/students/student-profile/student-profile.component';
 import { UserProfileComponent } from './admin/users/user-profile/user-profile.component';
+import { LogoutComponent } from './pages/logout/logout.component';
+import { TranslocoRootModule } from './transloco-root.module';
+
 
 @NgModule({
   declarations: [
@@ -37,7 +40,8 @@ import { UserProfileComponent } from './admin/users/user-profile/user-profile.co
     StudentsComponent,
     StudentDetailsComponent,
     StudentProfileComponent,
-    UserProfileComponent
+    UserProfileComponent,
+    LogoutComponent
   ],
   imports: [
     BrowserModule,
@@ -51,7 +55,8 @@ import { UserProfileComponent } from './admin/users/user-profile/user-profile.co
     ReactiveFormsModule,
     MatSnackBarModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    TranslocoRootModule
   ],
   providers: [],
   bootstrap: [AppComponent]

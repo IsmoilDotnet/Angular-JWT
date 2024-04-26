@@ -9,17 +9,20 @@ import { UserDetailsComponent } from './admin/users/user-details/user-details.co
 import { UserProfileComponent } from './admin/users/user-profile/user-profile.component';
 import { StudentsComponent } from './admin/students/students.component';
 import { StudentDetailsComponent } from './admin/students/student-details/student-details.component';
+import { LogoutComponent } from './pages/logout/logout.component';
+import { loginGuard, logoutGuard, studentGuard, userGuard } from './auth.guard';
 
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
-  {path: 'login', component: LoginComponent},
-  {path: 'register', component: RegisterComponent},
-  {path: 'users', component: UsersComponent},
+  {path: 'login', component: LoginComponent, canActivate: [loginGuard]},
+  {path: 'logout', component: LogoutComponent, canActivate: [logoutGuard]},
+  {path: 'register', component: RegisterComponent, canActivate: [logoutGuard]},
+  {path: 'users', component: UsersComponent, canActivate: [userGuard]},
   {path: 'student-profile', component: StudentProfileComponent},
   {path: 'user-details', component: UserDetailsComponent},
   {path: 'user-profile', component: UserProfileComponent},
-  {path: 'students', component: StudentsComponent},
+  {path: 'students', component: StudentsComponent, canActivate: [studentGuard]},
   {path: 'student-details', component: StudentDetailsComponent},
   {path: 'student-profile', component: StudentProfileComponent},
   {path: '**', component: HomeComponent}
