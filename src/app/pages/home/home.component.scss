@@ -2,8 +2,8 @@
     display: flex;
     justify-content: center; 
     align-items: center; 
-    height: 100vh; 
-    margin-top: 650px; // expand
+    height: 110vh; 
+    margin-top: 1050px; // expand
 }
 
 .main {
@@ -13,6 +13,7 @@
     width: 80%;
     max-width: 1200px; 
 }
+
 
 .description {
     background-color: rgb(239, 245, 249); 
@@ -60,6 +61,7 @@
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;
+    margin-top: 35px;
 }
 
 .description button:hover{
@@ -76,21 +78,111 @@
 }
 
 .offers {
-    // background-color: #e0e0e0; 
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
-    width: 100%; /* Full width */
-    max-width: 800px; /* Maximum width */
+    width: 100%; 
+    max-width: 800px; 
+    position: relative;
 }
+
+.offers h1 {
+    font-size: 50px; 
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 40px;
+}
+
+.offers p {
+    font-size: 15px; 
+    color: #888484;
+    font-weight: bolder;
+    margin-bottom: 40px;
+}
+
+// .offers h1 {
+//     line-height: 1.0;
+// }
+
+
+.offers-corner-image {
+    position: absolute; 
+    top: 10%; 
+    right: calc(10% + 10px);
+    width: 180px; 
+    height: auto; 
+    z-index: 2; 
+}
+
+
+.icon-row {
+    display: flex;
+    justify-content: space-around; 
+    margin-top: 20px; 
+}
+
+.icon-container {
+    width: 32%; 
+    height: 230px; 
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    border-radius: 8px;
+    border: 0.1px solid black;
+    position: relative; 
+    overflow: hidden; 
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease, opacity 0.3s ease;
+}
+
+.icon-container img {
+    max-width:27%;
+    max-height: 100%;
+    position: absolute; 
+    top: 70px; 
+    left: 80px; 
+    transform: translate(-50%, -50%);
+}
+
+.icon-container div {
+    text-align: left;
+    margin-top: 130px;
+    padding-left: 40px;
+}
+
+.icon-container div h2{
+    font-size: 18px;
+    font-weight: bolder;
+    margin-bottom: 1px;
+}
+
+.icon-container div h3{
+    font-size: 13px;
+    color: #909090;
+    font-weight: bold;
+    margin-bottom: 0; 
+}
+
+.icon-container div h3 span{
+    text-decoration: underline;
+}
+
+.icon-container:hover {
+    background-color: rgb(239, 245, 249); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    transform: scale(1.05); 
+    border-color: #ccc; 
+    opacity: 0.8;
+}
+
 
 .enrollment-encouragement {
     background-color: #d0d0d0;
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
-    width: 100%; /* Full width */
-    max-width: 800px; 
+    width: 100%; 
+    max-width: 800px;
 }
 
 .results {
@@ -142,7 +234,7 @@
     .students,
     .short-enrollment-encouragement {
         max-width: 100%; 
-        margin-bottom: 90px;
+        margin-bottom: 130px;
     }
 }
 

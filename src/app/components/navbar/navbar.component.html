@@ -1,8 +1,8 @@
-<mat-toolbar style="background-color: white; border-bottom: 0.1px solid black;">
+<mat-toolbar style="background-color: white; border-bottom: 0.1px solid black;" class="fix-it">
   <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
     <mat-icon>menu</mat-icon>
   </button>
-  <span style="cursor: pointer;">Otabek Writing</span>
+  <span style="cursor: pointer;" routerLink="/navbar">Otabek Writing</span>
   <span class="example-spacer"></span>
   <button [routerLink]="'/login'" mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
     <mat-icon>login</mat-icon>
@@ -19,3 +19,4 @@
   </button>
 
 </mat-toolbar> 
+
