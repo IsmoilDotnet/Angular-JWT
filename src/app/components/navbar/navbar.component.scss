@@ -3,3 +3,47 @@
   }
 
 
+  .fix-it {
+    background-color: #f2f2f2; 
+    padding: 20px 0; 
+    position: fixed; 
+    width: 100%;
+    top: 0; 
+    z-index: 1; 
+}
+
+.fix-it span {
+  color: black; 
+}
+
+header {
+    background-color: #f2f2f2;
+    padding: 20px 0;
+    position: fixed;
+    width: 20%; 
+    top: 0;
+    z-index: 1;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: aqua;
+}
