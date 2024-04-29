@@ -31,14 +31,12 @@
 // }
 
 
-
-
 .background-div {
     display: flex;
     justify-content: center; 
     align-items: center; 
     height: 110vh; 
-    margin-top: 1530px; // expand
+    margin-top: 1750px; // expand
 }
 
 .main {
@@ -340,7 +338,6 @@
 }
 
 
-
 .results {
     padding: 20px;
     border-radius: 10px;
@@ -353,7 +350,7 @@
 .r-icon-container {
     position: relative;
     width: 32%; 
-    height: 700px; 
+    height: 830px; 
     display: flex;
     justify-content: center;
     flex-direction: column; 
@@ -396,7 +393,7 @@
 .r-icon-container img.secondary-image {
     position: absolute;
     border-radius: 10%;
-    // border-color: #000000;
+    border-color: #000000;
     top: 72%; 
     left: 50%; 
     transform: translate(-50%, -50%);
@@ -421,31 +418,230 @@
     border-radius: 10px;
     margin-bottom: 20px;
     width: 100%; 
-    max-width: 800px; 
+    max-width: 1800px; 
 }
 
-
 .s-icon-container {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+    
 }
 
 .s-icon-container img {
-    width: 100%; 
-    height: auto; 
+    width: 100%;
+    height: auto;
+}
+
+.student-div {
+    background-color: #f3f7fb;
+    color: #fff;
+    padding: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    width: 700px;
+    border: 0.1px solid rgb(177, 185, 185);
+    overflow: hidden;
+    animation: moveRight 20s linear infinite;
+}
+
+
+@keyframes moveRight {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-100%); 
+    }
+}
+
+
+.student-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: auto; 
+}
+
+.student-details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.student-info h2 {
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 0;
+    padding-bottom: px;
+}
+
+.student-info p {
+    color: black;
+    font-size: 20px;
+}
+
+.student-info h2,
+.student-info p {
+    margin: 5px 20px; 
+}
+
+.student-info img {
+    width: 120px;
+    border-radius: 50%;
+    margin: 20px 30px; 
+    margin-right: 10px; 
+    display: block;
+}
+
+
+.student-comment {
+    padding: 20px;
+    width: 100%;
+    height: 20vh;
+    border-top: 0.1px solid rgb(177, 185, 185);
+    left: 300px;
+    border-radius: 0 0 10px 10px;
+    background-color: #fff;
+}
+
+.student-comment p{
+    color:#909090;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+}
+
+.comment-content {
+    width: 100%;
+}
+
+.additional-info {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: auto;
+    margin-left: auto;
+}
+
+.additional-info h1 {
+    margin: 0;
+    font-weight: bolder;
+    font-size: 18px;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.additional-info h1 span:hover{
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 
 
 .short-enrollment-encouragement {
-    background-color: #909090; 
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
-    width: 100%; /* Full width */
-    max-width: 800px; /* Maximum width */
+    width: 100%; 
+    max-width: 800px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.buttons-container{ 
+    display: flex;
+    // flex-direction: column;
+    align-items: center; 
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.short-button-one,
+.short-button-two {
+    padding: 18px 40px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bolder;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-right: 20px;
+}
+
+.short-button-one {
+    background-color: #000000;
+    color: #fff;
+    
+}
+
+.short-button-two {
+    background-color: #f3f7fb;
+    border: 0.1px solid #ccc;
+
+}
+
+.short-button-one:hover {
+    background-color: #221e1e;
+}
+
+.short-button-two:hover {
+    background-color: rgb(239, 245, 249);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-color: #ccc;
+    opacity: 0.8;
+}
+
+.large-image {
+    height: auto;
+    margin-top: 20px;
+}
+
+
+.footer {
+    position: absolute;
+    top: 470%;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .footer nav {
+    margin: 0 20px; /* Add margin between navigation menus */
+  }
+  
+  .footer ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    display: flex;
+  }
+  
+  .footer ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .footer a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
 
 
 @media screen and (max-width: 1999px) {
@@ -460,12 +656,12 @@
     .students,
     .short-enrollment-encouragement {
         max-width: 100%; 
-        margin-bottom: 130px;
+        margin-bottom: 50px;
     }
 }
 
 @media screen and (min-width: 1200px) {
     .main {
-        width: 80%; 
+        width: 120%; 
     }
 }
